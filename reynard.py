@@ -291,7 +291,7 @@ Species: {str(species_sel)}
 Age: {str(kit.ageGen(chosen_age))}
 Appearance: {kit.heightGen()}, {skin_color}, {str.lower(eye_color)}, wears {top_out.lower()}, {str.lower(kit.massGen('bottomcolor'))} {str.lower(kit.massGen('bottom'))}, {str.lower(kit.massGen('sockcolor'))} {str.lower(kit.massGen('sock'))}, {str.lower(kit.massGen('shoecolor'))} {str.lower(kit.massGen('shoe'))}, and {hat_out}
 Skills: {kit.skillGen()}
-Abilities: {kit.abilityGen()}
+Abilities: Temporarily replaced
 Personality: {kit.personalityGen()} (Note, if you get a conflict, just remove it, don't have error correction set up yet)
 Background: {str(kit.massGen('nationality'))}.''', file=outfile)
                             # This entire section used to please the italians. But now it's split off to the segment above!
@@ -344,7 +344,7 @@ Hair Style: {kit.massGen('hairstyle')}
 Eye Color: {eye_color}
 Height: {kit.heightGen()}
 Clothes: {top_out}, {kit.massGen('bottomcolor')} {kit.massGen('bottom')}, {kit.massGen('sockcolor')} {kit.massGen('sock')}, {kit.massGen('shoecolor')} {kit.massGen('shoe')}, {hat_out}
-Abilities: {kit.abilityGen()}
+Abilities: Temporarily replaced
 Skills: {kit.skillGen()}
 Personality: {kit.personalityGen()} (Note, if you get a conflict, just remove it, don't have error correction set up yet)
 Likes: No Table
@@ -407,7 +407,7 @@ Top: {top_out}
 Bottom: {kit.massGen('bottomcolor')} {kit.massGen('bottom')}
 Feet: {kit.massGen('shoecolor')} {kit.massGen('shoe')}
 Hands: No Table
-Abilities: {kit.abilityGen()}
+Abilities: Temporarily replaced
 Skills: {kit.skillGen()}
 Personality: {kit.personalityGen()} (Note, if you get a conflict, just remove it, don't have error correction set up yet)
 Likes: No Table

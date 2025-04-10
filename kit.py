@@ -273,177 +273,177 @@ def birthDateGen(rang,format):
         case _:
             raise vixen.InvalidFormatError('Date not in format range.')
 
-def magicLevel(abil):
-    match abil:
-        case 0:
-            maglev = randrange(0,vixen.MAGIC_SKILL_CAP)
-            return str(vixen.magic_skill[maglev])
-        case _:
-            return str(vixen.abilities[abil])
+# def magicLevel(abil):
+#    match abil:
+#        case 0:
+#            maglev = randrange(0,vixen.MAGIC_SKILL_CAP)
+#            return str(vixen.magic_skill[maglev])
+#        case _:
+#            return str(vixen.abilities[abil])
 
-def abilityGen():
-    numberOf = randrange(1,8)
-    match numberOf:
-        case 1:
-            abil1 = randrange(0,vixen.ABILITY_MAX)
-            bility1 = magicLevel(abil1)
-            return f'{bility1}'
-        case 2:
-            abil1 = randrange(0,vixen.ABILITY_MAX)
-            abil2 = randrange(0,vixen.ABILITY_MAX)
-            while abil1 == abil2:
-                abil1 = randrange(0,vixen.ABILITY_MAX)
-            while abil2 == abil1:
-                abil2 = randrange(0,vixen.ABILITY_MAX)
-            bility1 = magicLevel(abil1)
-            bility2 = magicLevel(abil2)
-            return f'{bility1}, {bility2}'
-        case 3:
-            abil1 = randrange(0,vixen.ABILITY_MAX)
-            abil2 = randrange(0,vixen.ABILITY_MAX)
-            abil3 = randrange(0,vixen.ABILITY_MAX)
-            while abil1 == abil2|abil3:
-                abil1 = randrange(0,vixen.ABILITY_MAX)
-            while abil2 == abil1|abil3:
-                abil2 = randrange(0,vixen.ABILITY_MAX)
-            while abil3 == abil1|abil2:
-                abil3 = randrange(0,vixen.ABILITY_MAX)
-            bility1 = magicLevel(abil1)
-            bility2 = magicLevel(abil2)
-            bility3 = magicLevel(abil3)
-            return f'{bility1}, {bility2}, {bility3}'
-        case 4:
-            abil1 = randrange(0,vixen.ABILITY_MAX)
-            abil2 = randrange(0,vixen.ABILITY_MAX)
-            abil3 = randrange(0,vixen.ABILITY_MAX)
-            abil4 = randrange(0,vixen.ABILITY_MAX)
-            while abil1 == abil2|abil3|abil4:
-                abil1 = randrange(0,vixen.ABILITY_MAX)
-            while abil2 == abil1|abil3|abil4:
-                abil2 = randrange(0,vixen.ABILITY_MAX)
-            while abil3 == abil1|abil2|abil4:
-                abil3 = randrange(0,vixen.ABILITY_MAX)
-            while abil4 == abil1|abil2|abil3:
-                abil4 = randrange(0,vixen.ABILITY_MAX)
-            bility1 = magicLevel(abil1)
-            bility2 = magicLevel(abil2)
-            bility3 = magicLevel(abil3)
-            bility4 = magicLevel(abil4)
-            return f'{bility1}, {bility2}, {bility3}, {bility4}'
-        case 5:
-            abil1 = randrange(0,vixen.ABILITY_MAX)
-            abil2 = randrange(0,vixen.ABILITY_MAX)
-            abil3 = randrange(0,vixen.ABILITY_MAX)
-            abil4 = randrange(0,vixen.ABILITY_MAX)
-            abil5 = randrange(0,vixen.ABILITY_MAX)
-            while abil1 == abil2|abil3|abil4|abil5:
-                abil1 = randrange(0,vixen.ABILITY_MAX)
-            while abil2 == abil1|abil3|abil4|abil5:
-                abil2 = randrange(0,vixen.ABILITY_MAX)
-            while abil3 == abil1|abil2|abil4|abil5:
-                abil3 = randrange(0,vixen.ABILITY_MAX)
-            while abil4 == abil1|abil2|abil3|abil5:
-                abil4 = randrange(0,vixen.ABILITY_MAX)
-            while abil5 == abil1|abil2|abil3|abil4:
-                abil5 = randrange(0,vixen.ABILITY_MAX)
-            bility1 = magicLevel(abil1)
-            bility2 = magicLevel(abil2)
-            bility3 = magicLevel(abil3)
-            bility4 = magicLevel(abil4)
-            bility5 = magicLevel(abil5)
-            return f'{bility1}, {bility2}, {bility3}, {bility4}, {bility5}'
-        case 6:
-            abil1 = randrange(0,vixen.ABILITY_MAX)
-            abil2 = randrange(0,vixen.ABILITY_MAX)
-            abil3 = randrange(0,vixen.ABILITY_MAX)
-            abil4 = randrange(0,vixen.ABILITY_MAX)
-            abil5 = randrange(0,vixen.ABILITY_MAX)
-            abil6 = randrange(0,vixen.ABILITY_MAX)
-            while abil1 == abil2|abil3|abil4|abil5|abil6:
-                abil1 = randrange(0,vixen.ABILITY_MAX)
-            while abil2 == abil1|abil3|abil4|abil5|abil6:
-                abil2 = randrange(0,vixen.ABILITY_MAX)
-            while abil3 == abil1|abil2|abil4|abil5|abil6:
-                abil3 = randrange(0,vixen.ABILITY_MAX)
-            while abil4 == abil1|abil2|abil3|abil5|abil6:
-                abil4 = randrange(0,vixen.ABILITY_MAX)
-            while abil5 == abil1|abil2|abil3|abil4|abil6:
-                abil5 = randrange(0,vixen.ABILITY_MAX)
-            while abil6 == abil1|abil2|abil3|abil4|abil5:
-                abil6 = randrange(0,vixen.ABILITY_MAX)
-            bility1 = magicLevel(abil1)
-            bility2 = magicLevel(abil2)
-            bility3 = magicLevel(abil3)
-            bility4 = magicLevel(abil4)
-            bility5 = magicLevel(abil5)
-            bility6 = magicLevel(abil6)
-            return f'{bility1}, {bility2}, {bility3}, {bility4}, {bility5}, {bility6}'
-        case 7:
-            abil1 = randrange(0,vixen.ABILITY_MAX)
-            abil2 = randrange(0,vixen.ABILITY_MAX)
-            abil3 = randrange(0,vixen.ABILITY_MAX)
-            abil4 = randrange(0,vixen.ABILITY_MAX)
-            abil5 = randrange(0,vixen.ABILITY_MAX)
-            abil6 = randrange(0,vixen.ABILITY_MAX)
-            abil7 = randrange(0,vixen.ABILITY_MAX)
-            while abil1 == abil2|abil3|abil4|abil5|abil6|abil7:
-                abil1 = randrange(0,vixen.ABILITY_MAX)
-            while abil2 == abil1|abil3|abil4|abil5|abil6|abil7:
-                abil2 = randrange(0,vixen.ABILITY_MAX)
-            while abil3 == abil1|abil2|abil4|abil5|abil6|abil7:
-                abil3 = randrange(0,vixen.ABILITY_MAX)
-            while abil4 == abil1|abil2|abil3|abil5|abil6|abil7:
-                abil4 = randrange(0,vixen.ABILITY_MAX)
-            while abil5 == abil1|abil2|abil3|abil4|abil6|abil7:
-                abil5 = randrange(0,vixen.ABILITY_MAX)
-            while abil6 == abil1|abil2|abil3|abil4|abil5|abil7:
-                abil6 = randrange(0,vixen.ABILITY_MAX)
-            while abil7 == abil1|abil2|abil3|abil4|abil5|abil6:
-                abil7 = randrange(0,vixen.ABILITY_MAX)
-            bility1 = magicLevel(abil1)
-            bility2 = magicLevel(abil2)
-            bility3 = magicLevel(abil3)
-            bility4 = magicLevel(abil4)
-            bility5 = magicLevel(abil5)
-            bility6 = magicLevel(abil6)
-            bility7 = magicLevel(abil7)
-            return f'{bility1}, {bility2}, {bility3}, {bility4}, {bility5}, {bility6}, {bility7}'
-        case 8:
-            abil1 = randrange(0,vixen.ABILITY_MAX)
-            abil2 = randrange(0,vixen.ABILITY_MAX)
-            abil3 = randrange(0,vixen.ABILITY_MAX)
-            abil4 = randrange(0,vixen.ABILITY_MAX)
-            abil5 = randrange(0,vixen.ABILITY_MAX)
-            abil6 = randrange(0,vixen.ABILITY_MAX)
-            abil7 = randrange(0,vixen.ABILITY_MAX)
-            abil8 = randrange(0,vixen.ABILITY_MAX)
-            while abil1 == abil2|abil3|abil4|abil5|abil6|abil7|abil8:
-                abil1 = randrange(0,vixen.ABILITY_MAX)
-            while abil2 == abil1|abil3|abil4|abil5|abil6|abil7|abil8:
-                abil2 = randrange(0,vixen.ABILITY_MAX)
-            while abil3 == abil1|abil2|abil4|abil5|abil6|abil7|abil8:
-                abil3 = randrange(0,vixen.ABILITY_MAX)
-            while abil4 == abil1|abil2|abil3|abil5|abil6|abil7|abil8:
-                abil4 = randrange(0,vixen.ABILITY_MAX)
-            while abil5 == abil1|abil2|abil3|abil4|abil6|abil7|abil8:
-                abil5 = randrange(0,vixen.ABILITY_MAX)
-            while abil6 == abil1|abil2|abil3|abil4|abil5|abil7|abil8:
-                abil6 = randrange(0,vixen.ABILITY_MAX)
-            while abil7 == abil1|abil2|abil3|abil4|abil5|abil6|abil8:
-                abil7 = randrange(0,vixen.ABILITY_MAX)
-            while abil8 == abil1|abil2|abil3|abil4|abil5|abil6|abil7:
-                abil8 = randrange(0,vixen.ABILITY_MAX)
-            bility1 = magicLevel(abil1)
-            bility2 = magicLevel(abil2)
-            bility3 = magicLevel(abil3)
-            bility4 = magicLevel(abil4)
-            bility5 = magicLevel(abil5)
-            bility6 = magicLevel(abil6)
-            bility7 = magicLevel(abil7)
-            bility8 = magicLevel(abil8)
-            return f'{bility1}, {bility2}, {bility3}, {bility4}, {bility5}, {bility6}, {bility7}, {bility8}'
-        case _:
-            return 'Failed'
+# def abilityGen():
+#    numberOf = randrange(1,8)
+#    match numberOf:
+#        case 1:
+#            abil1 = randrange(0,vixen.ABILITY_MAX)
+#            bility1 = magicLevel(abil1)
+#            return f'{bility1}'
+#        case 2:
+#            abil1 = randrange(0,vixen.ABILITY_MAX)
+#            abil2 = randrange(0,vixen.ABILITY_MAX)
+#            while abil1 == abil2:
+#                abil1 = randrange(0,vixen.ABILITY_MAX)
+#            while abil2 == abil1:
+#                abil2 = randrange(0,vixen.ABILITY_MAX)
+#            bility1 = magicLevel(abil1)
+#            bility2 = magicLevel(abil2)
+#            return f'{bility1}, {bility2}'
+#        case 3:
+#            abil1 = randrange(0,vixen.ABILITY_MAX)
+#            abil2 = randrange(0,vixen.ABILITY_MAX)
+#            abil3 = randrange(0,vixen.ABILITY_MAX)
+#            while abil1 == abil2|abil3:
+#                abil1 = randrange(0,vixen.ABILITY_MAX)
+#            while abil2 == abil1|abil3:
+#                abil2 = randrange(0,vixen.ABILITY_MAX)
+#            while abil3 == abil1|abil2:
+#                abil3 = randrange(0,vixen.ABILITY_MAX)
+#            bility1 = magicLevel(abil1)
+#            bility2 = magicLevel(abil2)
+#            bility3 = magicLevel(abil3)
+#            return f'{bility1}, {bility2}, {bility3}'
+#        case 4:
+#            abil1 = randrange(0,vixen.ABILITY_MAX)
+#            abil2 = randrange(0,vixen.ABILITY_MAX)
+#            abil3 = randrange(0,vixen.ABILITY_MAX)
+#            abil4 = randrange(0,vixen.ABILITY_MAX)
+#            while abil1 == abil2|abil3|abil4:
+#                abil1 = randrange(0,vixen.ABILITY_MAX)
+#            while abil2 == abil1|abil3|abil4:
+#                abil2 = randrange(0,vixen.ABILITY_MAX)
+#            while abil3 == abil1|abil2|abil4:
+#                abil3 = randrange(0,vixen.ABILITY_MAX)
+#            while abil4 == abil1|abil2|abil3:
+#                abil4 = randrange(0,vixen.ABILITY_MAX)
+#            bility1 = magicLevel(abil1)
+#            bility2 = magicLevel(abil2)
+#            bility3 = magicLevel(abil3)
+#            bility4 = magicLevel(abil4)
+#            return f'{bility1}, {bility2}, {bility3}, {bility4}'
+#        case 5:
+#            abil1 = randrange(0,vixen.ABILITY_MAX)
+#            abil2 = randrange(0,vixen.ABILITY_MAX)
+#            abil3 = randrange(0,vixen.ABILITY_MAX)
+#            abil4 = randrange(0,vixen.ABILITY_MAX)
+#            abil5 = randrange(0,vixen.ABILITY_MAX)
+#            while abil1 == abil2|abil3|abil4|abil5:
+#                abil1 = randrange(0,vixen.ABILITY_MAX)
+#            while abil2 == abil1|abil3|abil4|abil5:
+#                abil2 = randrange(0,vixen.ABILITY_MAX)
+#            while abil3 == abil1|abil2|abil4|abil5:
+#                abil3 = randrange(0,vixen.ABILITY_MAX)
+#            while abil4 == abil1|abil2|abil3|abil5:
+#                abil4 = randrange(0,vixen.ABILITY_MAX)
+#            while abil5 == abil1|abil2|abil3|abil4:
+#                abil5 = randrange(0,vixen.ABILITY_MAX)
+#            bility1 = magicLevel(abil1)
+#            bility2 = magicLevel(abil2)
+#            bility3 = magicLevel(abil3)
+#            bility4 = magicLevel(abil4)
+#            bility5 = magicLevel(abil5)
+#            return f'{bility1}, {bility2}, {bility3}, {bility4}, {bility5}'
+#        case 6:
+#            abil1 = randrange(0,vixen.ABILITY_MAX)
+#            abil2 = randrange(0,vixen.ABILITY_MAX)
+#            abil3 = randrange(0,vixen.ABILITY_MAX)
+#            abil4 = randrange(0,vixen.ABILITY_MAX)
+#            abil5 = randrange(0,vixen.ABILITY_MAX)
+#            abil6 = randrange(0,vixen.ABILITY_MAX)
+#            while abil1 == abil2|abil3|abil4|abil5|abil6:
+#                abil1 = randrange(0,vixen.ABILITY_MAX)
+#            while abil2 == abil1|abil3|abil4|abil5|abil6:
+#                abil2 = randrange(0,vixen.ABILITY_MAX)
+#            while abil3 == abil1|abil2|abil4|abil5|abil6:
+#                abil3 = randrange(0,vixen.ABILITY_MAX)
+#            while abil4 == abil1|abil2|abil3|abil5|abil6:
+#                abil4 = randrange(0,vixen.ABILITY_MAX)
+#            while abil5 == abil1|abil2|abil3|abil4|abil6:
+#                abil5 = randrange(0,vixen.ABILITY_MAX)
+#            while abil6 == abil1|abil2|abil3|abil4|abil5:
+#                abil6 = randrange(0,vixen.ABILITY_MAX)
+#            bility1 = magicLevel(abil1)
+#            bility2 = magicLevel(abil2)
+#            bility3 = magicLevel(abil3)
+#            bility4 = magicLevel(abil4)
+#            bility5 = magicLevel(abil5)
+#            bility6 = magicLevel(abil6)
+#            return f'{bility1}, {bility2}, {bility3}, {bility4}, {bility5}, {bility6}'
+#        case 7:
+#            abil1 = randrange(0,vixen.ABILITY_MAX)
+#            abil2 = randrange(0,vixen.ABILITY_MAX)
+#            abil3 = randrange(0,vixen.ABILITY_MAX)
+#            abil4 = randrange(0,vixen.ABILITY_MAX)
+#            abil5 = randrange(0,vixen.ABILITY_MAX)
+#            abil6 = randrange(0,vixen.ABILITY_MAX)
+#            abil7 = randrange(0,vixen.ABILITY_MAX)
+#            while abil1 == abil2|abil3|abil4|abil5|abil6|abil7:
+#                abil1 = randrange(0,vixen.ABILITY_MAX)
+#            while abil2 == abil1|abil3|abil4|abil5|abil6|abil7:
+#                abil2 = randrange(0,vixen.ABILITY_MAX)
+#            while abil3 == abil1|abil2|abil4|abil5|abil6|abil7:
+#                abil3 = randrange(0,vixen.ABILITY_MAX)
+#            while abil4 == abil1|abil2|abil3|abil5|abil6|abil7:
+#                abil4 = randrange(0,vixen.ABILITY_MAX)
+#            while abil5 == abil1|abil2|abil3|abil4|abil6|abil7:
+#                abil5 = randrange(0,vixen.ABILITY_MAX)
+#            while abil6 == abil1|abil2|abil3|abil4|abil5|abil7:
+#                abil6 = randrange(0,vixen.ABILITY_MAX)
+#            while abil7 == abil1|abil2|abil3|abil4|abil5|abil6:
+#                abil7 = randrange(0,vixen.ABILITY_MAX)
+#            bility1 = magicLevel(abil1)
+#            bility2 = magicLevel(abil2)
+#            bility3 = magicLevel(abil3)
+#            bility4 = magicLevel(abil4)
+#            bility5 = magicLevel(abil5)
+#            bility6 = magicLevel(abil6)
+#            bility7 = magicLevel(abil7)
+#            return f'{bility1}, {bility2}, {bility3}, {bility4}, {bility5}, {bility6}, {bility7}'
+#        case 8:
+#            abil1 = randrange(0,vixen.ABILITY_MAX)
+#            abil2 = randrange(0,vixen.ABILITY_MAX)
+#            abil3 = randrange(0,vixen.ABILITY_MAX)
+#            abil4 = randrange(0,vixen.ABILITY_MAX)
+#            abil5 = randrange(0,vixen.ABILITY_MAX)
+#            abil6 = randrange(0,vixen.ABILITY_MAX)
+#            abil7 = randrange(0,vixen.ABILITY_MAX)
+#            abil8 = randrange(0,vixen.ABILITY_MAX)
+#            while abil1 == abil2|abil3|abil4|abil5|abil6|abil7|abil8:
+#                abil1 = randrange(0,vixen.ABILITY_MAX)
+#            while abil2 == abil1|abil3|abil4|abil5|abil6|abil7|abil8:
+#                abil2 = randrange(0,vixen.ABILITY_MAX)
+#            while abil3 == abil1|abil2|abil4|abil5|abil6|abil7|abil8:
+#                abil3 = randrange(0,vixen.ABILITY_MAX)
+#            while abil4 == abil1|abil2|abil3|abil5|abil6|abil7|abil8:
+#                abil4 = randrange(0,vixen.ABILITY_MAX)
+#            while abil5 == abil1|abil2|abil3|abil4|abil6|abil7|abil8:
+#                abil5 = randrange(0,vixen.ABILITY_MAX)
+#            while abil6 == abil1|abil2|abil3|abil4|abil5|abil7|abil8:
+#                abil6 = randrange(0,vixen.ABILITY_MAX)
+#            while abil7 == abil1|abil2|abil3|abil4|abil5|abil6|abil8:
+#                abil7 = randrange(0,vixen.ABILITY_MAX)
+#            while abil8 == abil1|abil2|abil3|abil4|abil5|abil6|abil7:
+#                abil8 = randrange(0,vixen.ABILITY_MAX)
+#            bility1 = magicLevel(abil1)
+#            bility2 = magicLevel(abil2)
+#            bility3 = magicLevel(abil3)
+#            bility4 = magicLevel(abil4)
+#            bility5 = magicLevel(abil5)
+#            bility6 = magicLevel(abil6)
+#            bility7 = magicLevel(abil7)
+#            bility8 = magicLevel(abil8)
+#            return f'{bility1}, {bility2}, {bility3}, {bility4}, {bility5}, {bility6}, {bility7}, {bility8}'
+#        case _:
+#            return 'Failed'
 
 def skillGen():
     skillnum = randrange(0,5)

@@ -73,9 +73,6 @@ species = [
     "Ringtail",
     "Mongoose",
     "Hyena",
-    "Fekuygan",
-    "Nevikem",
-    "Zaiphein",
     "Axolotl",
     "Bat",
     "Bunny",
@@ -91,11 +88,10 @@ species = [
     "Moth",
     "Fish",
     "Owl",
-    "Shadow Entity",
     "Elf",
 ]
 
-SPECIES_MAX = 46
+SPECIES_MAX = 42
 
 fur_colors = [
     "Red",
@@ -159,7 +155,7 @@ SEXUALITIES_MAX = 4
 genders = [
     "Female",
     "Male",
-    "What're you, a cop? Fuck off. (Androgynous)", # love this one, lmao
+    "What're you, a cop? Fuck off. (Androgynous)", # love this one, lmao; It'll be replaced eventually, but it's as is for now
 ]
 
 GENDER_MAX = 2
@@ -791,7 +787,7 @@ andro_names = [
     "Kris",
 ]
 
-ANDRO_NAMES_MAX = 33 # Some of these were pulled from the other name tables, none of them were added recently
+ANDRO_NAMES_MAX = 33
 
 last_names = [
     "Astra",
@@ -875,92 +871,6 @@ last_names = [
 ]
 
 LAST_NAMES_MAX = 77
-
-abilities = [
-    'magic_regenerate',
-    'Furry Prohibition Act',
-    'We\'re Riding On The Internet',
-    'Taking Inventory',
-    'Is This A Crossover Episode?',
-    'THE Deus Ex Machina',
-    'sv_cheats 1 | buddha',
-    'Flap Your Wings',
-    'Is This Fucking InFamous',
-    'Matrix Mode',
-    'Anti-Furry Prohibition Act',
-    'Literally Anything But Yourself',
-    'Banana For Scale',
-    'Sponsored by VoxTek',
-    'The Return of Max Caulfield',
-    'SANS UNDERTALE',
-    'You\'re Welcome Truman',
-    'Breathe Motherfucker Breathe',
-    'What In The Silver Wolf',
-    'SCREAM VERY LOUD',
-    'Pyro Suit',
-    'Anti-Burn Cream',
-    'Straight Pyrokinesis',
-    'Scentback Or Something',
-    'Must You Taste Everything',
-    'Shadow Kill Enhanced!??!?!?',
-    'FOLD YOUR FUCKING AGE TIME',
-    'Are You A Construction Drone',
-    'IT\'S WIZARD TIME MOTHERFUCKER',
-    'Seer Of Realms',
-    'Fold Time',
-    'Blink',
-    'Possession',
-    'Dark Vision',
-    'Windblast',
-    'Pull',
-    'Outsider\'s Mark',
-    'Eye From The Sky',
-]
-
-ABILITY_MAX = 37
-
-magic_skill = [
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Beginner-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Average-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Intermediate-Level Magic',
-    'Advanced-Level Magic', # 36
-    'Master-Level Magic' # 37
-]
-
-MAGIC_SKILL_CAP = 37
 
 skills_landd = [
     'Cooking',
