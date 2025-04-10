@@ -1,3 +1,6 @@
+"I'll just summarize this all as a 'yikes moment' and call it good"
+"I can't believe I had to face the consequences of my actions"
+
 # Reynard
 ### The internal name that for now, is just the name of the script.
 
